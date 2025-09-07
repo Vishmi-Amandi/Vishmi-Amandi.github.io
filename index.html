@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <title>Vishmi Amandi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <a href="#home" class="logo">Vishmi</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a></li>
+      <a href="#about">About</a></li>
+      <a href="#projects">Projects</a></li>
+      <a href="#contact">Contact</a></li>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-img">
+      <img src="assets/Profile2.jpg" alt="Profile Image">
+    </div>
+    <div class="home-content">
+      <h3>Hello, I’m </h3>
+      <h1><span class="highlight">Vishmi Amandi</span></h1>
+      <p>An IT undergraduate passionate about <span class="multiple-text">coding and designing.</span></p>
+    
+      <div class="social-media">
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>        
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p>
+        I’m a 2nd year undergraduate of Sabaragamuwa University of Sri Lanka, 
+        currently studying a BSc. Honours Degree in Information Systems. 
+        I am intermediate in C, Java, JavaScript, HTML, CSS, and MySQL.
+        And interested to learn, build, and explore new technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="project- grid">
+    
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/zoo website.jpg" alt="Zoo website preview" />
+        <h3>Virtual Zoo</h3>
+        <p>A HTML & CSS based website about animals, birds and their habitats.</p>
+        <div class="project-links">
+          <button class="btn" href="https://github.com/Vishmi-Amandi/My-first-web-development-project" target="_blank">GitHub</button>
+        </div>
+      </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+        <img src="assets/portfolio.jpg" alt="portfolio website preview" />
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal website built with HTML, CSS, and JavaScript.</p>
+        <div class="project-links">
+          <button class="btn" href="https://github.com/Vishmi-Amandi/Vishmi-Amandi.github.io" target="_blank">GitHub</button>
+        </div>
+      </div>
+      
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 class="heading">Contact<span>Me</span></h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="tel" placeholder="Phone Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vishmi Amandi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
