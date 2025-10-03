@@ -77,7 +77,6 @@ header {
 
 
 /* Home */
-
 .home {
   display: flex;
   justify-content: center;
@@ -166,6 +165,94 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 25rem;
+}
+
+/* Education */
+.education{
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    min-height: 100vh;
+    background-color: var(--second-bg-color);
+}
+.education .heading{
+    padding-bottom: 3rem;
+    font-size: 6rem;
+    text-align: center;
+}
+.education .timeline-items{
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.education .timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+}
+.education .timeline-items .timeline-item{
+    margin-bottom: 4rem;
+    width: 100%;
+    position: relative;
+}
+.education .timeline-items .timeline-item:last-child{
+    margin-bottom: 0;
+}
+.education .timeline-items .timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.education .timeline-items .timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+    text-align: right;
+}
+.education .timeline-items .timeline-item .timeline-dot{
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 10px;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.education .timeline-items .timeline-item .timeline-date{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.education .timeline-items .timeline-item .timeline-content{
+    padding: 4rem;
+    width: 36rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 3rem;
+    transition: .5s ease-in-out;
+}
+.education .timeline-items .timeline-item .timeline-content:hover{
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+
+}
+.education .timeline-items .timeline-item .timeline-content h3{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.education .timeline-items .timeline-item .timeline-content p{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    line-height: 1;
+    text-align: center;
 }
 
 /* Projects */
@@ -275,4 +362,5 @@ footer {
   color: var(--bg-color);
   font-size: 1.5rem;
 }
+
 
