@@ -10,8 +10,7 @@
 <body>
   <!-- Navbar -->
   <header class="header">
-    <a href="#home" class="logo">Vishmi</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
+    <a href="#home" class="logo">Vishmi<span> Amandi</span></a>
     <nav class="navbar">
       <a href="#home">Home</a></li>
       <a href="#about">About</a></li>
@@ -84,7 +83,7 @@
   <!-- Projects -->
   <section id="projects" class="projects">
     <h2 class="heading">Projects</h2>
-    <div class="project- grid">
+    <div class="project-grid">
     
       <!-- Project 1 -->
       <div class="project-card">
@@ -111,29 +110,39 @@
 
   <!-- Contact -->
   <section id="contact" class="contact">
-    <h2 class="heading">Contact<span>Me</span></h2>
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-      </div>
-      <div class="input-box">
-        <input type="tel" placeholder="Phone Number">
-        <input type="text" placeholder="Email Subject">
-      </div>
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
+    <h2 class="heading">Contact<span> Me</span></h2>
+    <div class="form-container">
+      <form action="#" method="get">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" class="input">
+          <input type="email" placeholder="Email Address" class="input">
+          <input type="tel" placeholder="Phone Number" class="input">
+          <input type="text" placeholder="Email Subject" class="input">
+        </div>
+        <div class="text">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </div>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Vishmi Amandi</p>
+  <footer class="footer">
+    <nav class="navbar">
+      <a href="#home">Home</a></li>
+      <a href="#about">About</a></li>
+      <a href="#education">Education</a></li>
+      <a href="#projects">Projects</a></li>
+      <a href="#contact">Contact</a></li>
+    </nav>
+    <div class="credit"><p>&copy; 2025 Vishmi Amandi</p></div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
