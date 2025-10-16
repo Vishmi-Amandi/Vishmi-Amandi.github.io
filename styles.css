@@ -78,11 +78,12 @@ header {
   min-height: 110vh;
 }
 .home-img img{
-  width: 25vw;
+  width: 45rem;
+  height: 45rem;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
-  transition: 0.4s ease;
+  object-fit: cover;
 }
 .home-img img:hover {
   box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var(--main-color);
@@ -234,7 +235,7 @@ span {
 
 /* About */
 .about {
-    min-height: 80vh;
+    min-height: 70vh;
     background-color: var(--main-color);
 
 }
@@ -264,7 +265,7 @@ span {
     justify-content: center;
     flex-flow: column;
     min-height: 100vh;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 .education .heading{
     padding-bottom: 3rem;
@@ -345,43 +346,60 @@ span {
 }
 
 /* Projects */
+.projects {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 5rem 5%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
 .projects h2{
   font-size: 6rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 .project-grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 1;
   gap: 2rem;
+  padding: 10rem;
+  width: 100%;
+  overflow: auto;
 }   
-.project-card{
-  flex: 1 1 30rem;
-  background: var(--bg-color);
-  padding: 6rem ;
-  border-radius: 2rem;
-  text-align: center;
-  border: 0.3rem solid var(--main-color);
-  transition: 0.3s ease;
+.project-card {
+  background-color: var(--bg-color);
+  width: 40rem;
+  padding: 2rem;
+  margin: 2rem;
+  float: inline-start;
+  border-radius: 3rem;
+  border: .2rem solid var(--main-color);
+  transition: .5s ease-in-out;
 }
 .project-card:hover {
   background: var(--main-color);
-  border-color: var(--snd-bg-color-color);
+  border-color: var(--snd-bg-color);
   transform: scale(1.05);
 }
 .project-card h3 {
   font-size: 2.6rem;
+  text-align: center;
+  margin: 1rem;
 }
 .project-card p {
   font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem;
 }
 .project-card img {
   border-radius: 8px;
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-bottom: 5px;
-  border-image: fill;
+  border-image: center;
 }
 .project-links {
   margin-top: 10px;
@@ -451,6 +469,7 @@ footer {
   color: var(--bg-color);
   font-size: 1.5rem;
 }
+
 
 
 
